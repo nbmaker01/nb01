@@ -15,9 +15,9 @@
     <!-- ===== 카메라 + 이동 설정 ===== -->
     <!-- PC: WASD 이동 + 마우스 시점 -->
     <!-- VR: HMD 및 컨트롤러 자동 적용 -->
-    <a-entity id="rig" position="0 1.6 10">
+    <a-entity id="rig" position="0 1.6 20">
       <a-camera
-        wasd-controls="acceleration: 50"
+        wasd-controls="acceleration: 60"
         look-controls="pointerLockEnabled: true">
       </a-camera>
     </a-entity>
@@ -29,23 +29,23 @@
     <!-- ===== 하늘 (배경) ===== -->
     <a-sky color="#87CEEB"></a-sky>
 
-    <!-- ===== 바닥 (훨씬 넓게) ===== -->
+    <!-- ===== 바닥 (더 크게 확장) ===== -->
     <a-plane
       rotation="-90 0 0"
-      width="300"
-      height="300"
+      width="600"
+      height="600"
       color="#7BC8A4">
     </a-plane>
 
     <!-- ===== 조명 ===== -->
-    <a-light type="ambient" intensity="0.7"></a-light>
-    <a-light type="directional" position="10 20 10" intensity="1.2"></a-light>
+    <a-light type="ambient" intensity="0.8"></a-light>
+    <a-light type="directional" position="15 30 15" intensity="1.3"></a-light>
 
-    <!-- ===== 3D 모델 (.glb) - 10배 크기 ===== -->
+    <!-- ===== 3D 모델 (.glb) - 30배 크기 ===== -->
     <a-entity
       gltf-model="model.glb"
-      position="0 0 -10"    <!-- 더 멀리 배치 -->
-      scale="10 10 10"      <!-- 10배 확대 -->
+      position="0 0 -20"    <!-- 더 멀리 배치 -->
+      scale="30 30 30"      <!-- 30배 확대 -->
       rotation="0 30 0">
     </a-entity>
 
